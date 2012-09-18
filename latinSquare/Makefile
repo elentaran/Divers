@@ -1,11 +1,12 @@
 EXEC=computeLS
 CC=ghc
+SRC=$(wildcard *.hs)
 
 all: $(EXEC)
 
 
-$(EXEC): 
-	$(CC) main.hs -o $(EXEC) 
+$(EXEC): $(SRC)
+	$(CC) $(SRC) -o $(EXEC) 
 
 
 clean:
