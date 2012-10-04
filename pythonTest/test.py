@@ -1,0 +1,3 @@
+def printCoucou():
+    print "coucou"
+
