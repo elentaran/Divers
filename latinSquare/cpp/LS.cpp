@@ -53,20 +53,69 @@ double LS::computeDist( vector<int> point1, vector<int> point2 ) {
     return res;
 }
 
-void LS::writeLS(string fileName /*=""*/ ) {
+// save an LS in a file
+void LS::writeLS(string fileName) {
     //todo
 
 }
 
+// load an LS from a file
 void LS::readLS(string fileName) {
     //todo
 
 }
 
+// compute the value of the current LS
+// update the file containing the best value if there is a new reccord
+void LS::updateBest() {
+    double currentVal = computeMinDist();
+    double bestVal = readBest();
+    if (currentVal > bestVal) {
+        cout << "new reccord!!: " << currentVal << endl;
+        writeBest(currentVal);
+    }
+}
+
+// save the current result in a file
+// used to track the current best
+void LS::writeBest(double val, string fileName /*=""*/) {
+    if (fileName == "") {
+        stringstream res;
+        res << RECCORD_REP << _dim << "_" << _size << ".best";
+        fileName = res.str();
+    }
+
+    ofstream myfile(fileName.c_str());
+    myfile << val << endl;
+    myfile << toString() << endl;
+    myfile.close();
+
+}
+
+// load the result from the file or return 0 if no file
+double LS::readBest(string fileName /*=""*/) {
+    if (fileName == "") {
+        stringstream res;
+        res << RECCORD_REP << _dim << "_" << _size << ".best";
+        fileName = res.str();
+    }
+
+    double res=0;
+    ifstream myfile(fileName.c_str());
+    if (myfile.is_open())
+    {
+        myfile >> res;
+        myfile.close();
+    } else {
+        cerr << "could not read the file" << endl;
+    }
+
+    return res;
+}
+
 void LS::genRand() {
     // creation of dim sequences of values
     vector < vector<int> > tempVal;
-    vector < vector<int> > val;
     vector <int> seq;
     for (int i=0; i<_size; i++)
         seq.push_back(i);
@@ -80,7 +129,7 @@ void LS::genRand() {
     // we update _values
     for (int i=0; i<_size; i++) {
         for (int j=0;j<_dim;j++) {
-            _values[i][j] = tempVal[j][i];
+            _values[i][j] = tempVal[j][i]; // _values is the transposed of tempVal
         }
     }
 
