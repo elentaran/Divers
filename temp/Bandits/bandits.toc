@@ -1,0 +1,5 @@
+\beamer@endinputifotherversion {3.10pt}
+\select@language {french}
+\beamer@sectionintoc {2}{Bandit classique}{9}{0}{1}
+\beamer@sectionintoc {3}{Variantes du bandit}{19}{0}{2}
+\beamer@sectionintoc {4}{Bandits pour la planification}{27}{0}{3}
