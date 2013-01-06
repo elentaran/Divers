@@ -38,16 +38,16 @@
     
     Catégories de problèmes étudiés:
     \begin{itemize}
-        \item Problèmes ayant une complexité trop importante pour être résolue en un temps raisonnable.
+        \item Problèmes où l'espace de recherche est trop vaste pour être exploré en entier.
 
         Exemple: exploration d'arbre avec un grand nombre de nœuds.
 
-        \item Problèmes où il est impossible de trouver une solution optimale.
+        \item Problèmes où il est impossible de garantir une solution optimale.
 
-        Exemple: optimisation d'une fonction continue sans propriété.
+        Exemple: optimisation d'une fonction inconnue.
     \end{itemize}
 
-    Utilisation d'algorithmes donnant la meilleur solution possible en un temps donné.
+    $\Rightarrow$ Utilisation d'algorithmes donnant la meilleur solution possible en un temps donné.
 
 \end{frame}
 
@@ -143,15 +143,15 @@
 
 \begin{frame}
     \frametitle{Carrés latins}
-    But:
-    \begin{itemize}
-        \item Placer $n$ points dans une hypercube de taille $n$ par $n$.
-        \item todo: pour une dimension donnée, chaque point doit avoir une valeur différente.
-        \item todo: trouver la solution où la distance minimale entre 2 points est maximale.
-    \end{itemize}
     Applications:
     \begin{itemize}
         \item Planification d'expériences
+    \end{itemize}
+    But:
+    \begin{itemize}
+        \item Placer $n$ points dans une hypercube de taille $n$ et de dimension $d$.
+        \item \textit{non-collapsing}: pour une dimension donnée, chaque point doit avoir une valeur différente.
+        \item \textit{space-filling}: trouver la solution où la distance minimale entre 2 points est maximale.
     \end{itemize}
     \begin{center}
         \includegraphics[scale=0.3]{LHS.jpg}
@@ -165,6 +165,7 @@
     \item En dimension 2, pour les normes $L_1$ et $L_{inf}$, des algorithmes donnant la solution optimale en un temps linéaire ont été fournis.
     \item Pour la norme $L_2$, uniquement des solutions approchées.
     \item En dimension supérieure à 2, uniquement des solutions approchées.
+    \item Un site internet regroupe les meilleurs solutions existantes pour un grand nombre de dimensions et de tailles.
     \end{itemize}
 \end{frame}
 
@@ -186,10 +187,20 @@
 
 \begin{frame}
     \frametitle{Perspectives}
-    todo
+    Carrés latins:
     \begin{itemize}
-        \item trouver des chemins dans des graphes
-        \item trouver des colorations pondérées
+        \item Améliorations des algorithmes existants (fonction d'évaluation, solution par patterns)
+        \item Nouveaux algorithmes
+        \item Solutions exactes
+    \end{itemize}
+    Autres thèmes de recherche:
+    \begin{itemize}
+        \item trouver des chemins dans des graphes 
+        
+        Application aux problèmes de congestion en télécommunication
+        \item trouver des colorations pondérées dans des graphes 
+
+        Application aux problèmes de répartition de fréquences pour les utilisateurs d'un réseau
     \end{itemize}
 \end{frame}
 

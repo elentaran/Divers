@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.4)  4 JAN 2013 22:08
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2012.9.4)  6 JAN 2013 17:13
 entering extended mode
  %&-line parsing enabled.
 **introSupelec.tex
@@ -1083,45 +1083,44 @@ LaTeX Font Warning: Font shape `T1/cmss/m/n' in size <4> not available
 ] (./introSupelec.toc)
 [2
 
-] [3
-
-] (./introSupelec.toc) [4
-
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 79.
-
-(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+LaTeX Font Info:    Try loading font information for U+msa on input line 52.
+ (/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 79.
+LaTeX Font Info:    Try loading font information for U+msb on input line 52.
 
 (/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
-)
-<tree.jpg, id=185, 258.36525pt x 238.491pt>
+) [3
+
+] (./introSupelec.toc)
+[4
+
+] <tree.jpg, id=186, 258.36525pt x 238.491pt>
 File: tree.jpg Graphic file (type jpg)
  <use tree.jpg> [5
 
- <./tree.jpg (PNG copy)>] <mcts-algorithm.png, id=216, 573.14125pt x 233.87375p
+ <./tree.jpg (PNG copy)>] <mcts-algorithm.png, id=217, 573.14125pt x 233.87375p
 t>
 File: mcts-algorithm.png Graphic file (type png)
 
 <use mcts-algorithm.png> [6
 
  <./mcts-algorithm.png (PNG copy)>]
-<nested-algorithm.jpg, id=247, 426.58487pt x 243.67142pt>
+<nested-algorithm.jpg, id=248, 426.58487pt x 243.67142pt>
 File: nested-algorithm.jpg Graphic file (type jpg)
 
 <use nested-algorithm.jpg> [7
 
  <./nested-algorithm.jpg>]
-<multimodalFitnessLandscape.jpg, id=279, 361.35pt x 252.945pt>
+<multimodalFitnessLandscape.jpg, id=280, 361.35pt x 252.945pt>
 File: multimodalFitnessLandscape.jpg Graphic file (type jpg)
 
 <use multimodalFitnessLandscape.jpg> [8
 
  <./multimodalFitnessLandscape.jpg>]
-<EAalgorithmPedagogical.png, id=309, 789.70032pt x 383.18156pt>
+<EAalgorithmPedagogical.png, id=310, 789.70032pt x 383.18156pt>
 File: EAalgorithmPedagogical.png Graphic file (type png)
 
 <use EAalgorithmPedagogical.png>
@@ -1133,7 +1132,7 @@ Overfull \vbox (8.76761pt too high) detected at line 137
  <./EAalgorithmPedagogical.png>] (./introSupelec.toc) [10
 
 ]
-<LHS.jpg, id=376, 411.33675pt x 174.05025pt>
+<LHS.jpg, id=377, 411.33675pt x 174.05025pt>
 File: LHS.jpg Graphic file (type jpg)
  <use LHS.jpg> [11
 
@@ -1175,10 +1174,11 @@ rimmel/.texmf-var/fonts/pk/ljfour/jknappen/ec/ecsi1095.600pk> </home/rimmel/.te
 xmf-var/fonts/pk/ljfour/jknappen/ec/ecss0800.600pk> </home/rimmel/.texmf-var/fo
 nts/pk/ljfour/jknappen/ec/ecss1095.600pk> </home/rimmel/.texmf-var/fonts/pk/ljf
 our/jknappen/ec/ecss1440.600pk> </home/rimmel/.texmf-var/fonts/pk/ljfour/jknapp
-en/ec/ecss0600.600pk>
-Output written on introSupelec.pdf (15 pages, 508716 bytes).
+en/ec/ecss0600.600pk></usr/share/texmf-texlive/fonts/type1/public/amsfonts/cm/c
+msy10.pfb>
+Output written on introSupelec.pdf (15 pages, 521479 bytes).
 PDF statistics:
- 690 PDF objects out of 1000 (max. 8388607)
+ 708 PDF objects out of 1000 (max. 8388607)
  35 named destinations out of 1000 (max. 500000)
  143 words of extra memory for PDF output out of 10000 (max. 10000000)
 
